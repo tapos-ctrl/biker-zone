@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link up  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'header-bg': '#264653',
+                        'btn-bg': '#E76F51',
+                        'description-text': '#6C6C6C',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            background: white;
+        }
+    </style>
+</head>
+
+<body class="poppins">
+    <header class="bg-header-bg">
+        <div class="container px-5 mx-auto">
+            <nav class="container mx-auto">
+                <div class="navbar lg:justify-end">
+                    <div class="navbar-center">
+                        <div class="dropdown w-full">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm  dropdown-content mt-3 z-[1] p-2 bg-slate-600 rounded-box ">
+                                <li><a class="justify-center w-full">Item 8</a></li>
+                                <li><a class="justify-center w-full">Item 9</a></li>
+                                <div class="">
+                                    <a class="btn bg-btn-bg px-14 text-white normal-case border-0">Button</a>
+                                </div>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class=" hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 mr-24 text-white">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                        <div class="">
+                            <a class="btn bg-btn-bg text-white normal-case border-0">Button</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <!-- banner section  -->
+            <div class="">
+                <div class="flex flex-col justify-between lg:flex-row-reverse items-center">
+                    <img src="/images/slider/honda-cbr-300r-2-removebg-preview 1.png"
+                        class="lg:w-1/2 md:w-1/2 text-right rounded-lg lg:p-10" />
+                    <div class="lg:w-1/2 md:w-1/2 lg:p-10 text-white">
+                        <p>Computer-controlled digital transistorized with electronic advance</p>
+                        <h1 class="text-5xl font-bold">Honda CBR 300R</h1>
+                        <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                        <div class="">
+                            <a class="btn normal-case bg-btn-bg px-10 border-0 text-white">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Featured Bikes Section Start  -->
+        <section class="container px-5 mx-auto py-16">
+            <div class=" ">
+                <h1 class=" text-center text-5xl text-black font-semibold">Featured Bikes In This Year</h1>
+                <div class="">
+                    <p class="text-center after:relative  text-btn-bg">Best
+                        bike collection</p>
+                    <span
+                        class="before:content-[''] after:w-16 after:h-[2px] after:bg-btn-bg mt-1 flex justify-center after:absolute"></span>
+                </div>
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+
+                    <figure class="px-10 pt-10">
+                        <img src="/images/slider/Rectangle-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <figure class="px-10 pt-10">
+                        <img src="/images/slider/Rectangle 4637 1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <figure class="px-10 pt-10">
+                        <img src="/images/slider/Rectangle-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Bikes Section End  -->
+        <!-- latest Bikes Section Start  -->
+        <section class="container px-5 mx-auto py-16">
+            <h1 class=" text-center text-5xl text-black font-semibold">Latest Bikes</h1>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 py-10 gap-5">
+                <div class="shadow-2xl">
+                    <div class="flex justify-center p-5">
+                        <figure><img src="/images/slider/bike1.png" alt="Shoes" class="justify-center flex" /></figure>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-black text-lg font-semibold">Ducati XDIAVEL S-73</h2>
+                        <p class="text-xs text-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-btn-bg border-0 px-7 mt-5 text-white">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-2xl">
+                    <div class="flex justify-center p-5">
+                        <figure><img src="/images/slider/bike2.png" alt="Shoes" class="justify-center flex" /></figure>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-black text-lg font-semibold">Ducati XDIAVEL S-73</h2>
+                        <p class="text-xs text-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                            <div class="">
+                                <button class="btn bg-transparent border-[#E76F51] text-btn-bg  px-10 mt-5 normal-case">Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="shadow-2xl">
+                    <div class="flex justify-center p-5">
+                        <figure><img src="/images/slider/bike3.png" alt="Shoes" class="justify-center flex" /></figure>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-black text-lg font-semibold">Ducati XDIAVEL S-73</h2>
+                        <p class="text-xs text-description-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                        <div class="">
+                            <button class="btn bg-transparent border-[#E76F51] text-btn-bg  px-10 mt-5 normal-case">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- latest Bikes Section End  -->
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
